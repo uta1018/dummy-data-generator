@@ -1,0 +1,167 @@
+/* 自由に記述してかまいません */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  main {
+    width: 100%;
+    padding: 0 8px;
+  }
+}
+
+.icon {
+  background: #c3c3c3;
+  padding: 32px;
+  text-align: center;
+}
+
+.icon img {
+  background: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding: 8px;
+  border: 6px solid #ffd1da;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+button {
+  all: unset;
+  width: 60%;
+  background: #fff0f5;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+  cursor: pointer;
+  box-shadow: 0 8px #ffd1da;
+  transition: transform 0.1s, box-shadow 0.1s;
+  border: 2px solid #ffd1da;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  box-shadow: 0 4px #ffd1da;
+  transform: translateY(4px);
+}
+
+#aveText {
+  margin-top: 20px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+table {
+  margin: 32px 0 24px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #ffd1da;
+  padding: 10px 4px;
+}
+
+td {
+  padding: 8px 4px;
+}
+
+@media (max-width: 700px) {
+  th,
+  td {
+    padding: 8px 8px;
+  }
+}
+
+tbody tr:nth-child(even) td {
+  background: #fff0f5;
+}
+
+.number {
+  width: 15%;
+}
+
+.name {
+  width: 30%;
+}
+
+.purchase {
+  width: 30%;
+}
+
+.percent {
+  width: 25%;
+}
+
+/* .difference {
+  width: 30%;
+} */
+
+td.purchase {
+  text-align: right;
+  padding-right: 7%;
+}
+
+/* 
+.positive-difference {
+  color: lightcoral;
+}
+
+.negative-difference {
+  color: cornflowerblue;
+} */
+
+#sum-text {
+  display: inline-block;
+  width: 100%;
+  background: #fff0f5;
+  padding: 8px 0;
+  border: 2px solid #ffd1da;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  #sum-text {
+    width: 80%;
+  }
+}
+
+footer {
+  height: 120px;
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}

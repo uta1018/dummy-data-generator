@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dummy Data Generator</title>
+  <!-- CSSを読み込むため、以下のタグは削除しないでください -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- このHTMLファイルは自由に編集していただいて構いません -->
+  <div class="icon">
+    <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4255/c05caef07f13261cd7a5b1f714a950f69edc17fc.png" width="200">
+  </div>
+  <main>
+    <button id="btn">GENERATE</button>
+
+    <section class="deta">
+      <p id="aveText">
+        ダミーデータを再生成する
+        <i class="bi bi-arrow-up"></i>
+      </p>
+      <table id="targetTable">
+        <thead>
+          <tr>
+            <th class="number">No.</th>
+            <th class="name">氏名</th>
+            <th class="purchase">購入金額</th>
+            <th class="percent">(a)に対する割合</th>
+            <!-- <th>差</th> -->
+          </tr>
+        </thead>
+      </table>
+      <div class="container">
+        <p id="sum-text"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <small>&copy; 2023 256times</small>
+    </p>
+  </footer>
+
+  <!-- JavaScriptを読み込むため、以下のタグは削除しないでください -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
